@@ -16,7 +16,7 @@
 #pragma mark -
 
 //===========================================================
-@synthesize message = _message, date = _date, sendedFrom = _sendedFrom;
+@synthesize message = _message, date = _date, sentFrom = _sentFrom;
 
 
 //===========================================================
@@ -28,6 +28,7 @@
     
     return _message;
 }
+
 - (void) setMessage: (NSString *) aMessage
 {
     //NSLog(@"%s:   old value of _message: %@, changed to: %@", __FUNCTION__, _message, aMessage);
@@ -37,6 +38,7 @@
         _message = aMessage;
     }
 }
+
 //===========================================================
 //  date
 //===========================================================
@@ -46,6 +48,7 @@
     
     return _date;
 }
+
 - (void) setDate: (NSString *) aDate
 {
     //NSLog(@"%s:   old value of _date: %@, changed to: %@", __FUNCTION__, _date, aDate);
@@ -55,22 +58,24 @@
         _date = aDate;
     }
 }
+
 //===========================================================
 //  sendedFrom
 //===========================================================
-- (NSUInteger) sendedFrom
+- (NSUInteger) sentFrom
 {
     //NSLog(@"%s:    returned _sendedFrom = %lu", __FUNCTION__, _sendedFrom);
     
-    return _sendedFrom;
+    return _sentFrom;
 }
-- (void) setSendedFrom: (NSUInteger) aSendedFrom
+
+- (void) setsentFrom: (NSUInteger) aSentFrom
 {
     //NSLog(@"%s:   old value of _sendedFrom: %lu, changed to: %lu", __FUNCTION__, _sendedFrom, aSendedFrom);
     
-    if (_sendedFrom != aSendedFrom)
+    if (_sentFrom != aSentFrom)
     {
-        _sendedFrom = aSendedFrom;
+        _sentFrom = aSentFrom;
     }
 }
 
