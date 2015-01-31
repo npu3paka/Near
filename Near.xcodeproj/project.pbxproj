@@ -15,6 +15,7 @@
 		0CDBCE3F1A7D1803009D8AB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE361A7D1803009D8AB3 /* Images.xcassets */; };
 		0CDBCE401A7D1803009D8AB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE381A7D1803009D8AB3 /* Info.plist */; };
 		0CDBCE411A7D1803009D8AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE391A7D1803009D8AB3 /* main.m */; };
+		0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE431A7D1CCE009D8AB3 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		0CDBCE361A7D1803009D8AB3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0CDBCE381A7D1803009D8AB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CDBCE391A7D1803009D8AB3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0CDBCE421A7D1CCE009D8AB3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0CDBCE431A7D1CCE009D8AB3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,8 @@
 		0CDBCE331A7D1803009D8AB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE421A7D1CCE009D8AB3 /* User.h */,
+				0CDBCE431A7D1CCE009D8AB3 /* User.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */,
 				0CDBCE3E1A7D1803009D8AB3 /* AppDelegate.m in Sources */,
 				0CDBCE411A7D1803009D8AB3 /* main.m in Sources */,
 				0C67B7441A7D118C002BED8E /* ViewController.m in Sources */,
@@ -449,7 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Near/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Near/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -459,7 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Near/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Near/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
