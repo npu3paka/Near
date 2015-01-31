@@ -16,6 +16,7 @@
 		0CDBCE401A7D1803009D8AB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE381A7D1803009D8AB3 /* Info.plist */; };
 		0CDBCE411A7D1803009D8AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE391A7D1803009D8AB3 /* main.m */; };
 		0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE431A7D1CCE009D8AB3 /* User.m */; };
+		0CDBCE491A7D2952009D8AB3 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE481A7D2952009D8AB3 /* Message.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		0CDBCE391A7D1803009D8AB3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CDBCE421A7D1CCE009D8AB3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		0CDBCE431A7D1CCE009D8AB3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0CDBCE471A7D2952009D8AB3 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = Message/Message.h; sourceTree = "<group>"; };
+		0CDBCE481A7D2952009D8AB3 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = Message/Message.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +172,8 @@
 		0CDBCE331A7D1803009D8AB3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0CDBCE421A7D1CCE009D8AB3 /* User.h */,
-				0CDBCE431A7D1CCE009D8AB3 /* User.m */,
+				0CDBCE461A7D2878009D8AB3 /* Message */,
+				0CDBCE451A7D2866009D8AB3 /* User */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +230,24 @@
 			children = (
 			);
 			path = Controls;
+			sourceTree = "<group>";
+		};
+		0CDBCE451A7D2866009D8AB3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE421A7D1CCE009D8AB3 /* User.h */,
+				0CDBCE431A7D1CCE009D8AB3 /* User.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		0CDBCE461A7D2878009D8AB3 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE471A7D2952009D8AB3 /* Message.h */,
+				0CDBCE481A7D2952009D8AB3 /* Message.m */,
+			);
+			name = Message;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +353,7 @@
 			files = (
 				0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */,
 				0CDBCE3E1A7D1803009D8AB3 /* AppDelegate.m in Sources */,
+				0CDBCE491A7D2952009D8AB3 /* Message.m in Sources */,
 				0CDBCE411A7D1803009D8AB3 /* main.m in Sources */,
 				0C67B7441A7D118C002BED8E /* ViewController.m in Sources */,
 			);
