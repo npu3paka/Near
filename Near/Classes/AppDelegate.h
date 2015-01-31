@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class MeteorClient;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) MeteorClient *meteorClient;
 
 @end
 

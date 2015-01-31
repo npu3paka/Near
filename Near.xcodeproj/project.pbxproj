@@ -31,6 +31,8 @@
 		0CDBCE6D1A7D318E009D8AB3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBCE6C1A7D318E009D8AB3 /* CFNetwork.framework */; };
 		0CDBCE6F1A7D3194009D8AB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBCE6E1A7D3194009D8AB3 /* Security.framework */; };
 		0CDBCE711A7D319A009D8AB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBCE701A7D319A009D8AB3 /* Foundation.framework */; };
+		0CDBCE751A7D5805009D8AB3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE741A7D5805009D8AB3 /* LoginViewController.m */; };
+		0CDBCE791A7D5892009D8AB3 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE781A7D5892009D8AB3 /* LoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,10 @@
 		0CDBCE6C1A7D318E009D8AB3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		0CDBCE6E1A7D3194009D8AB3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0CDBCE701A7D319A009D8AB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0CDBCE731A7D5805009D8AB3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "Login Controller/LoginViewController.h"; sourceTree = "<group>"; };
+		0CDBCE741A7D5805009D8AB3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "Login Controller/LoginViewController.m"; sourceTree = "<group>"; };
+		0CDBCE771A7D5892009D8AB3 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = "Login View/LoginView.h"; sourceTree = "<group>"; };
+		0CDBCE781A7D5892009D8AB3 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = "Login View/LoginView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 		0CDBCE301A7D1803009D8AB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE721A7D57B3009D8AB3 /* Login Controller */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +275,7 @@
 		0CDBCE3C1A7D1803009D8AB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE761A7D586A009D8AB3 /* Login View */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +350,24 @@
 				0CDBCE671A7D3025009D8AB3 /* readme.md */,
 			);
 			path = M13OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		0CDBCE721A7D57B3009D8AB3 /* Login Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE731A7D5805009D8AB3 /* LoginViewController.h */,
+				0CDBCE741A7D5805009D8AB3 /* LoginViewController.m */,
+			);
+			name = "Login Controller";
+			sourceTree = "<group>";
+		};
+		0CDBCE761A7D586A009D8AB3 /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE771A7D5892009D8AB3 /* LoginView.h */,
+				0CDBCE781A7D5892009D8AB3 /* LoginView.m */,
+			);
+			name = "Login View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,7 +476,9 @@
 				0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */,
 				0CDBCE3E1A7D1803009D8AB3 /* AppDelegate.m in Sources */,
 				0CDBCE571A7D2CBB009D8AB3 /* DependencyProvider.m in Sources */,
+				0CDBCE791A7D5892009D8AB3 /* LoginView.m in Sources */,
 				0CDBCE691A7D3025009D8AB3 /* readme.md in Sources */,
+				0CDBCE751A7D5805009D8AB3 /* LoginViewController.m in Sources */,
 				0CDBCE581A7D2CBB009D8AB3 /* MeteorClient+Parsing.m in Sources */,
 				0CDBCE5A1A7D2CBB009D8AB3 /* ObjectiveDDP.m in Sources */,
 				0CDBCE631A7D2F63009D8AB3 /* SRWebSocket.m in Sources */,

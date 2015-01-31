@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ObjectiveDDP.h"
+#import "MeteorClient.h"
 
 @interface AppDelegate ()
 
@@ -37,7 +39,30 @@
 
     [self _initializeVersionWindow];
     
+    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
+    
+    //ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"wss://localhost:3000/websocket" delegate:self.meteorClient];
+    // local testing
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://localhost:3000/websocket" delegate:self.meteorClient];
+    
+    self.meteorClient.ddp = ddp;
+    [self.meteorClient.ddp connectWebSocket];
+    
+    [self.window makeKeyAndVisible];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportDisconnection) name:MeteorClientDidDisconnectNotification object:nil];
+
+    
     return YES;
+}
+
+- (void)reportConnection {
+    NSLog(@"================> connected to server!");
+}
+
+- (void)reportDisconnection {
+    NSLog(@"================> disconnected from server!");
 }
 
 - (void)_initializeVersionWindow
@@ -45,7 +70,6 @@
     // Ensure the version window is above the status bar.
     [self.window setWindowLevel:UIWindowLevelStatusBar + 1.0];
     
-    NSLog(@"level stats bar: %f", UIWindowLevelStatusBar);
     // Ensure the version window is not hidden.
     [self.window setHidden:NO];
     
