@@ -25,6 +25,8 @@
 		0CDBCE611A7D2F63009D8AB3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE5C1A7D2F63009D8AB3 /* LICENSE */; };
 		0CDBCE621A7D2F63009D8AB3 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE5D1A7D2F63009D8AB3 /* README.rst */; };
 		0CDBCE631A7D2F63009D8AB3 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE601A7D2F63009D8AB3 /* SRWebSocket.m */; };
+		0CDBCE681A7D3025009D8AB3 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE661A7D3025009D8AB3 /* M13OrderedDictionary.m */; };
+		0CDBCE691A7D3025009D8AB3 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE671A7D3025009D8AB3 /* readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,9 @@
 		0CDBCE5D1A7D2F63009D8AB3 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
 		0CDBCE5F1A7D2F63009D8AB3 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		0CDBCE601A7D2F63009D8AB3 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		0CDBCE651A7D3025009D8AB3 /* M13OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
+		0CDBCE661A7D3025009D8AB3 /* M13OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
+		0CDBCE671A7D3025009D8AB3 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +216,7 @@
 		0CDBCE351A7D1803009D8AB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE641A7D3025009D8AB3 /* M13OrderedDictionary */,
 				0CDBCE5B1A7D2F63009D8AB3 /* SocketRocket */,
 				0CDBCE4A1A7D2CBB009D8AB3 /* ObjectiveDDP */,
 				0CDBCE361A7D1803009D8AB3 /* Images.xcassets */,
@@ -310,6 +316,16 @@
 				0CDBCE601A7D2F63009D8AB3 /* SRWebSocket.m */,
 			);
 			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		0CDBCE641A7D3025009D8AB3 /* M13OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE651A7D3025009D8AB3 /* M13OrderedDictionary.h */,
+				0CDBCE661A7D3025009D8AB3 /* M13OrderedDictionary.m */,
+				0CDBCE671A7D3025009D8AB3 /* readme.md */,
+			);
+			path = M13OrderedDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,12 +434,14 @@
 				0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */,
 				0CDBCE3E1A7D1803009D8AB3 /* AppDelegate.m in Sources */,
 				0CDBCE571A7D2CBB009D8AB3 /* DependencyProvider.m in Sources */,
+				0CDBCE691A7D3025009D8AB3 /* readme.md in Sources */,
 				0CDBCE581A7D2CBB009D8AB3 /* MeteorClient+Parsing.m in Sources */,
 				0CDBCE5A1A7D2CBB009D8AB3 /* ObjectiveDDP.m in Sources */,
 				0CDBCE631A7D2F63009D8AB3 /* SRWebSocket.m in Sources */,
 				0CDBCE561A7D2CBB009D8AB3 /* BSONIdGenerator.m in Sources */,
 				0CDBCE591A7D2CBB009D8AB3 /* MeteorClient.m in Sources */,
 				0CDBCE491A7D2952009D8AB3 /* Message.m in Sources */,
+				0CDBCE681A7D3025009D8AB3 /* M13OrderedDictionary.m in Sources */,
 				0CDBCE411A7D1803009D8AB3 /* main.m in Sources */,
 				0C67B7441A7D118C002BED8E /* ViewController.m in Sources */,
 			);
