@@ -22,6 +22,9 @@
 		0CDBCE581A7D2CBB009D8AB3 /* MeteorClient+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE4F1A7D2CBB009D8AB3 /* MeteorClient+Parsing.m */; };
 		0CDBCE591A7D2CBB009D8AB3 /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE521A7D2CBB009D8AB3 /* MeteorClient.m */; };
 		0CDBCE5A1A7D2CBB009D8AB3 /* ObjectiveDDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE551A7D2CBB009D8AB3 /* ObjectiveDDP.m */; };
+		0CDBCE611A7D2F63009D8AB3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE5C1A7D2F63009D8AB3 /* LICENSE */; };
+		0CDBCE621A7D2F63009D8AB3 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 0CDBCE5D1A7D2F63009D8AB3 /* README.rst */; };
+		0CDBCE631A7D2F63009D8AB3 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE601A7D2F63009D8AB3 /* SRWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,10 @@
 		0CDBCE531A7D2CBB009D8AB3 /* ObjectiveDDP-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ObjectiveDDP-Prefix.pch"; sourceTree = "<group>"; };
 		0CDBCE541A7D2CBB009D8AB3 /* ObjectiveDDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveDDP.h; sourceTree = "<group>"; };
 		0CDBCE551A7D2CBB009D8AB3 /* ObjectiveDDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveDDP.m; sourceTree = "<group>"; };
+		0CDBCE5C1A7D2F63009D8AB3 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0CDBCE5D1A7D2F63009D8AB3 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
+		0CDBCE5F1A7D2F63009D8AB3 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		0CDBCE601A7D2F63009D8AB3 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +211,7 @@
 		0CDBCE351A7D1803009D8AB3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE5B1A7D2F63009D8AB3 /* SocketRocket */,
 				0CDBCE4A1A7D2CBB009D8AB3 /* ObjectiveDDP */,
 				0CDBCE361A7D1803009D8AB3 /* Images.xcassets */,
 			);
@@ -283,6 +291,25 @@
 				0CDBCE551A7D2CBB009D8AB3 /* ObjectiveDDP.m */,
 			);
 			path = ObjectiveDDP;
+			sourceTree = "<group>";
+		};
+		0CDBCE5B1A7D2F63009D8AB3 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE5C1A7D2F63009D8AB3 /* LICENSE */,
+				0CDBCE5D1A7D2F63009D8AB3 /* README.rst */,
+				0CDBCE5E1A7D2F63009D8AB3 /* SocketRocket */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		0CDBCE5E1A7D2F63009D8AB3 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE5F1A7D2F63009D8AB3 /* SRWebSocket.h */,
+				0CDBCE601A7D2F63009D8AB3 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,9 +393,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDBCE401A7D1803009D8AB3 /* Info.plist in Resources */,
+				0CDBCE621A7D2F63009D8AB3 /* README.rst in Resources */,
 				0CDBCE3F1A7D1803009D8AB3 /* Images.xcassets in Resources */,
 				0C67B7471A7D118C002BED8E /* Main.storyboard in Resources */,
 				0C67B74C1A7D118C002BED8E /* LaunchScreen.xib in Resources */,
+				0CDBCE611A7D2F63009D8AB3 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +420,7 @@
 				0CDBCE571A7D2CBB009D8AB3 /* DependencyProvider.m in Sources */,
 				0CDBCE581A7D2CBB009D8AB3 /* MeteorClient+Parsing.m in Sources */,
 				0CDBCE5A1A7D2CBB009D8AB3 /* ObjectiveDDP.m in Sources */,
+				0CDBCE631A7D2F63009D8AB3 /* SRWebSocket.m in Sources */,
 				0CDBCE561A7D2CBB009D8AB3 /* BSONIdGenerator.m in Sources */,
 				0CDBCE591A7D2CBB009D8AB3 /* MeteorClient.m in Sources */,
 				0CDBCE491A7D2952009D8AB3 /* Message.m in Sources */,
