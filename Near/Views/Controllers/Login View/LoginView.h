@@ -8,6 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginView : UIView
+@protocol LoginDelegate
 
+- (void) tryingToSignInWithData:(NSDictionary *)data;
+- (void) tryingToSignUpWithData:(NSDictionary *)data;
+@end
+
+@interface LoginView : UIView
+//===========================================================
+
+#pragma mark -
+#pragma mark Properties
+#pragma mark -
+
+//===========================================================
+@property (nonatomic, strong) UITextField *usernameField;
+@property (nonatomic, strong) UITextField *passwordField;
+@property (nonatomic, strong) UITextField *retypePassField;
+@property (nonatomic, strong) UIButton *loginButton;
+@property (nonatomic, strong) UIButton *registerButton;
+
+@property (nonatomic, retain) id<LoginDelegate> delegate;
+-(void) drawView;
 @end

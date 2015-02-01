@@ -32,7 +32,18 @@
 		0CDBCE6F1A7D3194009D8AB3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBCE6E1A7D3194009D8AB3 /* Security.framework */; };
 		0CDBCE711A7D319A009D8AB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDBCE701A7D319A009D8AB3 /* Foundation.framework */; };
 		0CDBCE751A7D5805009D8AB3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE741A7D5805009D8AB3 /* LoginViewController.m */; };
-		0CDBCE791A7D5892009D8AB3 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE781A7D5892009D8AB3 /* LoginView.m */; };
+		0CDBCE7D1A7D59A7009D8AB3 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE7C1A7D59A7009D8AB3 /* LoginView.m */; };
+		0CDBCE911A7E6809009D8AB3 /* NSArray-Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE801A7E6809009D8AB3 /* NSArray-Utils.m */; };
+		0CDBCE921A7E6809009D8AB3 /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE821A7E6809009D8AB3 /* NSData+Utils.m */; };
+		0CDBCE931A7E6809009D8AB3 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE841A7E6809009D8AB3 /* NSDate+Utils.m */; };
+		0CDBCE941A7E6809009D8AB3 /* NSDictionary+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE861A7E6809009D8AB3 /* NSDictionary+Utils.m */; };
+		0CDBCE951A7E6809009D8AB3 /* NSString+StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE881A7E6809009D8AB3 /* NSString+StringUtils.m */; };
+		0CDBCE961A7E6809009D8AB3 /* RegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE8A1A7E6809009D8AB3 /* RegularExpression.m */; };
+		0CDBCE971A7E6809009D8AB3 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE8C1A7E6809009D8AB3 /* UIColor+Utils.m */; };
+		0CDBCE981A7E6809009D8AB3 /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE8E1A7E6809009D8AB3 /* UILabel+Utils.m */; };
+		0CDBCE991A7E6809009D8AB3 /* UIView+ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE901A7E6809009D8AB3 /* UIView+ViewUtils.m */; };
+		0CDBCEA41A7E87E3009D8AB3 /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCEA31A7E87E3009D8AB3 /* MyManager.m */; };
+		0CDBCEA81A7E9467009D8AB3 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCEA71A7E9467009D8AB3 /* HomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +98,32 @@
 		0CDBCE701A7D319A009D8AB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0CDBCE731A7D5805009D8AB3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "Login Controller/LoginViewController.h"; sourceTree = "<group>"; };
 		0CDBCE741A7D5805009D8AB3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "Login Controller/LoginViewController.m"; sourceTree = "<group>"; };
-		0CDBCE771A7D5892009D8AB3 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = "Login View/LoginView.h"; sourceTree = "<group>"; };
-		0CDBCE781A7D5892009D8AB3 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = "Login View/LoginView.m"; sourceTree = "<group>"; };
+		0CDBCE7B1A7D59A7009D8AB3 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = "Login View/LoginView.h"; sourceTree = "<group>"; };
+		0CDBCE7C1A7D59A7009D8AB3 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = "Login View/LoginView.m"; sourceTree = "<group>"; };
+		0CDBCE7F1A7E6809009D8AB3 /* NSArray-Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray-Utils.h"; sourceTree = "<group>"; };
+		0CDBCE801A7E6809009D8AB3 /* NSArray-Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray-Utils.m"; sourceTree = "<group>"; };
+		0CDBCE811A7E6809009D8AB3 /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		0CDBCE821A7E6809009D8AB3 /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		0CDBCE831A7E6809009D8AB3 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		0CDBCE841A7E6809009D8AB3 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		0CDBCE851A7E6809009D8AB3 /* NSDictionary+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utils.h"; sourceTree = "<group>"; };
+		0CDBCE861A7E6809009D8AB3 /* NSDictionary+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utils.m"; sourceTree = "<group>"; };
+		0CDBCE871A7E6809009D8AB3 /* NSString+StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringUtils.h"; sourceTree = "<group>"; };
+		0CDBCE881A7E6809009D8AB3 /* NSString+StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringUtils.m"; sourceTree = "<group>"; };
+		0CDBCE891A7E6809009D8AB3 /* RegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpression.h; sourceTree = "<group>"; };
+		0CDBCE8A1A7E6809009D8AB3 /* RegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpression.m; sourceTree = "<group>"; };
+		0CDBCE8B1A7E6809009D8AB3 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		0CDBCE8C1A7E6809009D8AB3 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		0CDBCE8D1A7E6809009D8AB3 /* UILabel+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Utils.h"; sourceTree = "<group>"; };
+		0CDBCE8E1A7E6809009D8AB3 /* UILabel+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Utils.m"; sourceTree = "<group>"; };
+		0CDBCE8F1A7E6809009D8AB3 /* UIView+ViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewUtils.h"; sourceTree = "<group>"; };
+		0CDBCE901A7E6809009D8AB3 /* UIView+ViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewUtils.m"; sourceTree = "<group>"; };
+		0CDBCE9A1A7E6831009D8AB3 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		0CDBCE9C1A7E6A9F009D8AB3 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		0CDBCEA21A7E87E3009D8AB3 /* MyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyManager.h; path = "My Manager/MyManager.h"; sourceTree = "<group>"; };
+		0CDBCEA31A7E87E3009D8AB3 /* MyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyManager.m; path = "My Manager/MyManager.m"; sourceTree = "<group>"; };
+		0CDBCEA61A7E9467009D8AB3 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = "Home Controller/HomeController.h"; sourceTree = "<group>"; };
+		0CDBCEA71A7E9467009D8AB3 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = "Home Controller/HomeController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +229,7 @@
 		0CDBCE2F1A7D1803009D8AB3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE7E1A7E6809009D8AB3 /* Utilities */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -201,6 +237,7 @@
 		0CDBCE301A7D1803009D8AB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCEA51A7E9433009D8AB3 /* Home Controller */,
 				0CDBCE721A7D57B3009D8AB3 /* Login Controller */,
 			);
 			path = Controllers;
@@ -232,6 +269,7 @@
 		0CDBCE341A7D1803009D8AB3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCEA11A7E8786009D8AB3 /* My Manager */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -250,6 +288,7 @@
 		0CDBCE371A7D1803009D8AB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCE9C1A7E6A9F009D8AB3 /* Prefix.pch */,
 				0CDBCE381A7D1803009D8AB3 /* Info.plist */,
 				0CDBCE391A7D1803009D8AB3 /* main.m */,
 			);
@@ -364,10 +403,54 @@
 		0CDBCE761A7D586A009D8AB3 /* Login View */ = {
 			isa = PBXGroup;
 			children = (
-				0CDBCE771A7D5892009D8AB3 /* LoginView.h */,
-				0CDBCE781A7D5892009D8AB3 /* LoginView.m */,
+				0CDBCE7B1A7D59A7009D8AB3 /* LoginView.h */,
+				0CDBCE7C1A7D59A7009D8AB3 /* LoginView.m */,
 			);
 			name = "Login View";
+			sourceTree = "<group>";
+		};
+		0CDBCE7E1A7E6809009D8AB3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCE7F1A7E6809009D8AB3 /* NSArray-Utils.h */,
+				0CDBCE801A7E6809009D8AB3 /* NSArray-Utils.m */,
+				0CDBCE811A7E6809009D8AB3 /* NSData+Utils.h */,
+				0CDBCE821A7E6809009D8AB3 /* NSData+Utils.m */,
+				0CDBCE831A7E6809009D8AB3 /* NSDate+Utils.h */,
+				0CDBCE841A7E6809009D8AB3 /* NSDate+Utils.m */,
+				0CDBCE851A7E6809009D8AB3 /* NSDictionary+Utils.h */,
+				0CDBCE861A7E6809009D8AB3 /* NSDictionary+Utils.m */,
+				0CDBCE871A7E6809009D8AB3 /* NSString+StringUtils.h */,
+				0CDBCE881A7E6809009D8AB3 /* NSString+StringUtils.m */,
+				0CDBCE891A7E6809009D8AB3 /* RegularExpression.h */,
+				0CDBCE8A1A7E6809009D8AB3 /* RegularExpression.m */,
+				0CDBCE8B1A7E6809009D8AB3 /* UIColor+Utils.h */,
+				0CDBCE8C1A7E6809009D8AB3 /* UIColor+Utils.m */,
+				0CDBCE8D1A7E6809009D8AB3 /* UILabel+Utils.h */,
+				0CDBCE8E1A7E6809009D8AB3 /* UILabel+Utils.m */,
+				0CDBCE8F1A7E6809009D8AB3 /* UIView+ViewUtils.h */,
+				0CDBCE901A7E6809009D8AB3 /* UIView+ViewUtils.m */,
+				0CDBCE9A1A7E6831009D8AB3 /* Utils.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0CDBCEA11A7E8786009D8AB3 /* My Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCEA21A7E87E3009D8AB3 /* MyManager.h */,
+				0CDBCEA31A7E87E3009D8AB3 /* MyManager.m */,
+			);
+			name = "My Manager";
+			sourceTree = "<group>";
+		};
+		0CDBCEA51A7E9433009D8AB3 /* Home Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCEA61A7E9467009D8AB3 /* HomeController.h */,
+				0CDBCEA71A7E9467009D8AB3 /* HomeController.m */,
+			);
+			name = "Home Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,19 +557,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDBCE441A7D1CCE009D8AB3 /* User.m in Sources */,
+				0CDBCE941A7E6809009D8AB3 /* NSDictionary+Utils.m in Sources */,
 				0CDBCE3E1A7D1803009D8AB3 /* AppDelegate.m in Sources */,
 				0CDBCE571A7D2CBB009D8AB3 /* DependencyProvider.m in Sources */,
-				0CDBCE791A7D5892009D8AB3 /* LoginView.m in Sources */,
+				0CDBCE7D1A7D59A7009D8AB3 /* LoginView.m in Sources */,
+				0CDBCE991A7E6809009D8AB3 /* UIView+ViewUtils.m in Sources */,
+				0CDBCE931A7E6809009D8AB3 /* NSDate+Utils.m in Sources */,
 				0CDBCE691A7D3025009D8AB3 /* readme.md in Sources */,
 				0CDBCE751A7D5805009D8AB3 /* LoginViewController.m in Sources */,
+				0CDBCE951A7E6809009D8AB3 /* NSString+StringUtils.m in Sources */,
+				0CDBCE961A7E6809009D8AB3 /* RegularExpression.m in Sources */,
 				0CDBCE581A7D2CBB009D8AB3 /* MeteorClient+Parsing.m in Sources */,
 				0CDBCE5A1A7D2CBB009D8AB3 /* ObjectiveDDP.m in Sources */,
+				0CDBCE911A7E6809009D8AB3 /* NSArray-Utils.m in Sources */,
 				0CDBCE631A7D2F63009D8AB3 /* SRWebSocket.m in Sources */,
 				0CDBCE561A7D2CBB009D8AB3 /* BSONIdGenerator.m in Sources */,
+				0CDBCE981A7E6809009D8AB3 /* UILabel+Utils.m in Sources */,
 				0CDBCE591A7D2CBB009D8AB3 /* MeteorClient.m in Sources */,
 				0CDBCE491A7D2952009D8AB3 /* Message.m in Sources */,
 				0CDBCE681A7D3025009D8AB3 /* M13OrderedDictionary.m in Sources */,
 				0CDBCE411A7D1803009D8AB3 /* main.m in Sources */,
+				0CDBCE971A7E6809009D8AB3 /* UIColor+Utils.m in Sources */,
+				0CDBCEA81A7E9467009D8AB3 /* HomeController.m in Sources */,
+				0CDBCE921A7E6809009D8AB3 /* NSData+Utils.m in Sources */,
+				0CDBCEA41A7E87E3009D8AB3 /* MyManager.m in Sources */,
 				0C67B7441A7D118C002BED8E /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +703,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/macosx/Desktop/Near/Near/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Near/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -619,6 +715,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/macosx/Desktop/Near/Near/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Near/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

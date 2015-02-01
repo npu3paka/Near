@@ -7,8 +7,11 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginView.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <LoginDelegate>
+
+@property (nonatomic) MyManager *manager;
 
 @end
 
@@ -16,6 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _manager = [MyManager sharedManager];
+    LoginView *vi = [[LoginView alloc]init];
+    
+    vi.delegate = self;
+    
+    vi.frame = CGRectMake(20, 100, 320, 300);
+    
+    [vi drawView];
+    
+    [self.view addSubview:vi];
     // Do any additional setup after loading the view.
 }
 
@@ -24,6 +38,58 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)tryingToSignInWithData:(NSDictionary *)data {
+    NSString *username = [data objectForKey:@"username"];
+    NSString *passwrod = [data objectForKey:@"password"];
+    
+    if (!_manager.meteor.websocketReady) {
+        UIAlertView *notConnectedAlert = [[UIAlertView alloc] initWithTitle:@"Connection Error"
+                                                                    message:@"Can't find the Todo server, try again"
+                                                                   delegate:nil
+                                                          cancelButtonTitle:@"OK"
+                                                          otherButtonTitles:nil];
+        [notConnectedAlert show];
+        return;
+    }
+    [_manager.meteor logonWithUsername:username password:passwrod responseCallback:^(NSDictionary *response, NSError *error) {
+        if (error) {
+            [self handleFailedAuth:error];
+            return;
+        }
+        [self handleSuccessfulAuth];
+    }];
+    
+    NSLog(@"data: %@", data);
+    
+}
+
+-(void)tryingToSignUpWithData:(NSDictionary *)data {
+    NSString *username = [data objectForKey:@"username"];
+    NSString *passwrod = [data objectForKey:@"password"];
+    
+    [_manager.meteor signupWithUsername:username password:passwrod fullname:@"" responseCallback:^(NSDictionary *response, NSError *error) {
+        if (error) {
+            [self handleFailedAuth:error];
+            return;
+        }
+        [self handleSuccessfulAuth];
+    }];
+}
+#pragma mark - Internal
+
+- (void)handleSuccessfulAuth {
+    
+    NSLog(@"success");
+//    ListViewController *controller = [[ListViewController alloc] initWithNibName:@"ListViewController"
+//                                                                          bundle:nil
+//                                                                          meteor:self.meteor];
+//    controller.userId = self.meteor.userId;
+//    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)handleFailedAuth:(NSError *)error {
+    [[[UIAlertView alloc] initWithTitle:@"Meteor Todos" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Try Again" otherButtonTitles:nil] show];
+}
 /*
 #pragma mark - Navigation
 

@@ -7,8 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ObjectiveDDP.h"
-#import "MeteorClient.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    MyManager *manager = [MyManager sharedManager];
     
     statusBg = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.window.frame.size.width, 20)];
     statusBg.backgroundColor = [UIColor blackColor];
@@ -39,21 +39,20 @@
 
     [self _initializeVersionWindow];
     
-    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
+    manager.meteor = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
     
     //ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"wss://localhost:3000/websocket" delegate:self.meteorClient];
     // local testing
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://localhost:3000/websocket" delegate:self.meteorClient];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://localhost:3000/websocket" delegate:manager.meteor];
     
-    self.meteorClient.ddp = ddp;
-    [self.meteorClient.ddp connectWebSocket];
+    manager.meteor.ddp = ddp;
+    [manager.meteor.ddp connectWebSocket];
     
     [self.window makeKeyAndVisible];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportDisconnection) name:MeteorClientDidDisconnectNotification object:nil];
 
-    
     return YES;
 }
 
@@ -74,7 +73,7 @@
     [self.window setHidden:NO];
     
     // Disabe all user interaction with the version window.
-    [self.window setUserInteractionEnabled:NO];
+    [self.window setUserInteractionEnabled:YES];
     
     // Enable autoresizing of the version window's subviews so the labels are correctly resized when the device's orientation changes.
     [self.window setAutoresizesSubviews:YES];
@@ -138,37 +137,7 @@
     
     // Rotate the version window so that it is the same orientation as the status bar.
     CGFloat angle = 0.0f;
-    switch(sharedApplication.statusBarOrientation)
-    {
-        case UIInterfaceOrientationPortrait:
-        {
-            angle =  0.0f;
-            
-            break;
-        }
-            
-        case UIInterfaceOrientationLandscapeLeft:
-        {
-            angle = -0;
-            
-            break;
-        }
-            
-        case UIInterfaceOrientationLandscapeRight:
-        {
-            angle =  0;
-            
-            break;
-        }
-            
-        case UIInterfaceOrientationPortraitUpsideDown:
-        {
-            angle =  M_PI;
-            
-            break;
-        }
-    }
-    
+
     statusBg.transform = CGAffineTransformMakeRotation(angle);
     
     // Resize the version window so it will sit just above the status bar.
