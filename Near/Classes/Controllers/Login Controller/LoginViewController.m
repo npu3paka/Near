@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginView.h"
+#import "HomeController.h"
 
 @interface LoginViewController () <LoginDelegate>
 
@@ -80,11 +81,12 @@
 - (void)handleSuccessfulAuth {
     
     NSLog(@"success");
-//    ListViewController *controller = [[ListViewController alloc] initWithNibName:@"ListViewController"
-//                                                                          bundle:nil
-//                                                                          meteor:self.meteor];
-//    controller.userId = self.meteor.userId;
-//    [self.navigationController pushViewController:controller animated:YES];
+    
+    
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"homeController"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)handleFailedAuth:(NSError *)error {

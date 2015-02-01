@@ -7,7 +7,20 @@
 //
 
 #import "HomeController.h"
+#import "MainMenu.h"
 
 @implementation HomeController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self drawView];
+}
+
+
+- (void) drawView {
+    MainMenu *menu = [[MainMenu alloc]initWithFrame:CGRectMake(0, 100, self.view.width, 45)];
+    
+    [self.view addSubview:menu];
+}
 
 @end

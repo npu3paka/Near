@@ -44,6 +44,7 @@
 		0CDBCE991A7E6809009D8AB3 /* UIView+ViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCE901A7E6809009D8AB3 /* UIView+ViewUtils.m */; };
 		0CDBCEA41A7E87E3009D8AB3 /* MyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCEA31A7E87E3009D8AB3 /* MyManager.m */; };
 		0CDBCEA81A7E9467009D8AB3 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCEA71A7E9467009D8AB3 /* HomeController.m */; };
+		0CDBCEAC1A7E9C5D009D8AB3 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBCEAB1A7E9C5D009D8AB3 /* MainMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,8 @@
 		0CDBCEA31A7E87E3009D8AB3 /* MyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyManager.m; path = "My Manager/MyManager.m"; sourceTree = "<group>"; };
 		0CDBCEA61A7E9467009D8AB3 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = "Home Controller/HomeController.h"; sourceTree = "<group>"; };
 		0CDBCEA71A7E9467009D8AB3 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = "Home Controller/HomeController.m"; sourceTree = "<group>"; };
+		0CDBCEAA1A7E9C5D009D8AB3 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = "Main Menu/MainMenu.h"; sourceTree = "<group>"; };
+		0CDBCEAB1A7E9C5D009D8AB3 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenu.m; path = "Main Menu/MainMenu.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +317,7 @@
 		0CDBCE3C1A7D1803009D8AB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CDBCEA91A7E9C44009D8AB3 /* Main Menu */,
 				0CDBCE761A7D586A009D8AB3 /* Login View */,
 			);
 			path = Controllers;
@@ -453,6 +457,15 @@
 			name = "Home Controller";
 			sourceTree = "<group>";
 		};
+		0CDBCEA91A7E9C44009D8AB3 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0CDBCEAA1A7E9C5D009D8AB3 /* MainMenu.h */,
+				0CDBCEAB1A7E9C5D009D8AB3 /* MainMenu.m */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -582,6 +595,7 @@
 				0CDBCE921A7E6809009D8AB3 /* NSData+Utils.m in Sources */,
 				0CDBCEA41A7E87E3009D8AB3 /* MyManager.m in Sources */,
 				0C67B7441A7D118C002BED8E /* ViewController.m in Sources */,
+				0CDBCEAC1A7E9C5D009D8AB3 /* MainMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
